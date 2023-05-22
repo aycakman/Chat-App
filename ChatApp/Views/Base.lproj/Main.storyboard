@@ -28,7 +28,7 @@
                                     <segue destination="tTn-c9-i3j" kind="show" id="ueP-gc-BrG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Chat App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-wy-QJM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Chat App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-wy-QJM" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="65" y="349" width="263" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="73Q-tv-QzP"/>
