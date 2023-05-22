@@ -28,18 +28,7 @@
                                     <segue destination="tTn-c9-i3j" kind="show" id="ueP-gc-BrG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBH-3V-wM0">
-                                <rect key="frame" x="16" y="763" width="361" height="3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="3" id="TAG-Vh-AhO"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log In"/>
-                                <connections>
-                                    <segue destination="OFQ-BC-c4n" kind="show" id="ld3-qT-PZv"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome Chat App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-wy-QJM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Chat App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-wy-QJM">
                                 <rect key="frame" x="65" y="349" width="263" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="73Q-tv-QzP"/>
@@ -48,19 +37,30 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBH-3V-wM0">
+                                <rect key="frame" x="16" y="738" width="361" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="TAG-Vh-AhO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                <connections>
+                                    <segue destination="OFQ-BC-c4n" kind="show" id="ld3-qT-PZv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="M30-Rc-KdD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5lT-nE-jIZ"/>
-                            <constraint firstItem="VBH-3V-wM0" firstAttribute="top" secondItem="M30-Rc-KdD" secondAttribute="bottom" constant="33" id="9lV-W3-iMp"/>
-                            <constraint firstItem="fJG-wy-QJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Ifk-r0-SYB"/>
+                            <constraint firstItem="VBH-3V-wM0" firstAttribute="top" secondItem="M30-Rc-KdD" secondAttribute="bottom" constant="8" id="9lV-W3-iMp"/>
+                            <constraint firstItem="fJG-wy-QJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="Ifk-r0-SYB"/>
                             <constraint firstItem="M30-Rc-KdD" firstAttribute="leading" secondItem="VBH-3V-wM0" secondAttribute="leading" id="L6t-Cz-nu3"/>
                             <constraint firstItem="M30-Rc-KdD" firstAttribute="trailing" secondItem="VBH-3V-wM0" secondAttribute="trailing" id="OMQ-lM-D6u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VBH-3V-wM0" secondAttribute="bottom" constant="52" id="Zyt-p8-EjB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VBH-3V-wM0" secondAttribute="bottom" constant="28" id="Zyt-p8-EjB"/>
                             <constraint firstItem="M30-Rc-KdD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="myL-Nr-DEd"/>
-                            <constraint firstItem="fJG-wy-QJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="245" id="onV-DR-adn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fJG-wy-QJM" secondAttribute="trailing" constant="71" id="sx3-8Z-cKh"/>
+                            <constraint firstItem="fJG-wy-QJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="246" id="onV-DR-adn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fJG-wy-QJM" secondAttribute="trailing" constant="65" id="sx3-8Z-cKh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q0G-5B-jEh"/>
