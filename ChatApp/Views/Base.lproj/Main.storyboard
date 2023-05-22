@@ -176,7 +176,13 @@
                             <constraint firstItem="vW7-rM-wN1" firstAttribute="leading" secondItem="Yb7-W2-VgP" secondAttribute="leading" constant="5" id="zAH-Kb-0bZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hMn-Gi-gOX"/>
+                    <navigationItem key="navigationItem" id="hMn-Gi-gOX">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="hrR-3q-tmf">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="YQN-nf-lJd" id="9Of-km-2RI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="chatTableView" destination="jub-TM-y9R" id="T7N-8T-ma1"/>
                         <outlet property="messageTextField" destination="Yrz-2G-yMm" id="WLC-U3-Sqx"/>
