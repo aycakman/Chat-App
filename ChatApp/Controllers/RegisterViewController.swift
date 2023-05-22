@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
@@ -18,6 +17,8 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
+
+        
     }
     
     /*
