@@ -17,6 +17,7 @@
 		119517182A1B733200038CC0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119517172A1B733200038CC0 /* ChatViewController.swift */; };
 		1195171A2A1B741200038CC0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119517192A1B741200038CC0 /* WelcomeViewController.swift */; };
 		1195171C2A1B994200038CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1195171B2A1B994200038CC0 /* GoogleService-Info.plist */; };
+		1195171E2A1BB5D800038CC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195171D2A1BB5D800038CC0 /* Constants.swift */; };
 		D87E49579F1091F3C4A5CDD2 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF412F4843898383CA4CC92 /* Pods_ChatApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		119517172A1B733200038CC0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		119517192A1B741200038CC0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1195171B2A1B994200038CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1195171D2A1BB5D800038CC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5B5079F25706D6238DBCEF62 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		C5D1C502428B6C884C109A66 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				119516FC2A1B6D8300038CC0 /* LaunchScreen.storyboard */,
 				1195171B2A1B994200038CC0 /* GoogleService-Info.plist */,
 				119516FF2A1B6D8300038CC0 /* Info.plist */,
+				1195171D2A1BB5D800038CC0 /* Constants.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				119516F42A1B6D8200038CC0 /* SceneDelegate.swift in Sources */,
 				119517162A1B732600038CC0 /* LoginViewController.swift in Sources */,
 				119517182A1B733200038CC0 /* ChatViewController.swift in Sources */,
+				1195171E2A1BB5D800038CC0 /* Constants.swift in Sources */,
 				119517142A1B730D00038CC0 /* RegisterViewController.swift in Sources */,
 				1195171A2A1B741200038CC0 /* WelcomeViewController.swift in Sources */,
 			);
