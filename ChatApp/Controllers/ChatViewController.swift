@@ -8,16 +8,20 @@
 import UIKit
 import FirebaseCore
 import FirebaseAuth
+import FirebaseFirestore
 class ChatViewController: UIViewController {
     
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var chatTableView: UITableView!
+    
+    let db = Firestore.firestore()
     
     var messages: [Message] = [
         Message(sender: "1@hotmail.com", body: "Hey!"),
         Message(sender: "a@hotmail.com", body: "Hello!"),
         Message(sender: "1@hotmail.com", body: "What's up?")
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +34,16 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func sendButtonPressed(_ sender: Any) {
+        if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email{
+            db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody]) { error in
+                if let error = error {
+                    print("saving data to firestore is not working correctly \(error)")
+                }else {
+                    print("successfully saved data")
+                }
+            }
+            
+        }
     }
     
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
