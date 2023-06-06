@@ -55,6 +55,8 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.chatTableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.chatTableView.scrollToRow(at: indexPath, at: .top, animated: false)
                             }
                         }
                     }
@@ -64,6 +66,7 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func sendButtonPressed(_ sender: Any) {
+        
         if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email{
             db.collection(K.FStore.collectionName).addDocument(data: [
                 K.FStore.senderField: messageSender,
@@ -74,6 +77,9 @@ class ChatViewController: UIViewController {
                     print("saving data to firestore is not working correctly \(error)")
                 }else {
                     print("successfully saved data")
+                    DispatchQueue.main.async {
+                        self.messageTextField.text = ""
+                    }
                 }
             }
             
@@ -99,8 +105,20 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-        cell.messageLabel.text = messages[indexPath.row].body
+        cell.messageLabel.text = message.body
+        if message.sender == Auth.auth().currentUser?.email {
+            cell.leftImageView.isHidden = true
+            cell.rightImageView.isHidden = false
+            cell.messageArea.backgroundColor = UIColor(named: K.Colors.lightBlue)
+            cell.messageLabel.textColor = UIColor(named: K.Colors.blue)
+        } else {
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.messageArea.backgroundColor = UIColor(named: K.Colors.lightOrange)
+            cell.messageLabel.textColor = UIColor(named: K.Colors.lightBlue)
+        }
         return cell
         
     }

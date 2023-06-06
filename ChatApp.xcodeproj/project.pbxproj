@@ -84,11 +84,11 @@
 				119517102A1B72D700038CC0 /* Views */,
 				119516F12A1B6D8200038CC0 /* AppDelegate.swift */,
 				119516F32A1B6D8200038CC0 /* SceneDelegate.swift */,
+				1195171D2A1BB5D800038CC0 /* Constants.swift */,
 				119516FA2A1B6D8300038CC0 /* Assets.xcassets */,
 				119516FC2A1B6D8300038CC0 /* LaunchScreen.storyboard */,
 				1195171B2A1B994200038CC0 /* GoogleService-Info.plist */,
 				119516FF2A1B6D8300038CC0 /* Info.plist */,
-				1195171D2A1BB5D800038CC0 /* Constants.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";

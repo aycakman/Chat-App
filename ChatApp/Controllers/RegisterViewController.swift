@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let error = error {
-                    print(error)
+                    print("register error \(error)")
                 }else {
                     self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }

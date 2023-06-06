@@ -19,4 +19,11 @@ struct K {
         static let bodyField = "body"
         static let dateField = "date"
     }
+    
+    struct Colors {
+        static let lightOrange = "BrandLightOrange"
+        static let orange = "BrandOrange"
+        static let lightBlue = "BrandLightBlue"
+        static let blue = "BrandBlue"
+    }
 }
